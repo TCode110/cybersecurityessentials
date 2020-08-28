@@ -1,0 +1,65 @@
+      *************Location of IBM Mail Survers*************
+
+******First I use Ping Command To Find The Ip******
+
+ping  mx0a-001b2d01.pphosted.com.
+PING mx0a-001b2d01.pphosted.com (148.163.156.1) 56(84) bytes of data.
+64 bytes from mx0a-001b2d01.pphosted.com (148.163.156.1): icmp_seq=1 ttl=238 time=407 ms
+64 bytes from mx0a-001b2d01.pphosted.com (148.163.156.1): icmp_seq=2 ttl=238 time=640 ms
+64 bytes from mx0a-001b2d01.pphosted.com (148.163.156.1): icmp_seq=3 ttl=238 time=599 ms
+64 bytes from mx0a-001b2d01.pphosted.com (148.163.156.1): icmp_seq=4 ttl=238 time=560 ms
+
+*****And Then I trace the route of that ip for where is exactly coming from 
+using ------ (TRACEROUTE) ------ command***** 
+
+--------------------////****    TRACING ROUTE////*****   --------------------------
+
+traceroute 148.163.156.1
+traceroute to 148.163.156.1 (148.163.156.1), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.1.1)  6.419 ms  6.333 ms  6.271 ms
+ 2  * * *
+ 3  10.71.107.51 (10.71.107.51)  49.907 ms 10.71.107.34 (10.71.107.34)  49.899 ms  49.867 ms
+ 4  192.168.15.230 (192.168.15.230)  49.685 ms  49.719 ms 192.168.15.228 (192.168.15.228)  53.388 ms
+ 5  172.25.86.117 (172.25.86.117)  49.521 ms  49.472 ms 172.25.86.119 (172.25.86.119)  49.373 ms
+ 6  172.25.9.5 (172.25.9.5)  49.217 ms  41.196 ms  41.384 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  103.198.140.45 (103.198.140.45)  207.672 ms *  187.844 ms
+14  103.198.140.54 (103.198.140.54)  209.413 ms 103.198.140.29 (103.198.140.29)  202.843 ms 103.198.140.56 (103.198.140.56)  193.528 ms
+15  103.198.140.107 (103.198.140.107)  206.851 ms  213.458 ms  206.503 ms
+16  hu0-4-0-1.agr21.lhr01.atlas.cogentco.com (149.14.196.81)  193.545 ms  197.683 ms 103.198.140.45 (103.198.140.45)  184.304 ms
+17  be3672.ccr52.lhr01.atlas.cogentco.com (130.117.48.145)  197.287 ms  202.397 ms hu0-4-0-1.agr21.lhr01.atlas.cogentco.com (149.14.196.81)  195.802 ms
+18  be3488.ccr42.lon13.atlas.cogentco.com (154.54.60.13)  195.542 ms be3487.ccr41.lon13.atlas.cogentco.com (154.54.60.5)  196.785 ms be3671.ccr51.lhr01.atlas.cogentco.com (130.117.48.137)  188.355 ms
+19  be2870.ccr22.lon01.atlas.cogentco.com (154.54.58.174)  197.322 ms be2869.ccr22.lon01.atlas.cogentco.com (154.54.57.162)  199.001 ms  191.136 ms
+20  be2871.ccr21.lon01.atlas.cogentco.com (154.54.58.186)  189.553 ms ldn-b1-link.telia.net (62.115.185.38)  203.883 ms  194.723 ms
+21  ldn-b1-link.telia.net (62.115.9.28)  191.166 ms  207.251 ms ldn-bb3-link.telia.net (62.115.120.74)  310.048 ms
+22  ldn-bb3-link.telia.net (62.115.120.74)  303.230 ms * *
+23  * sjo-b21-link.telia.net (62.115.119.229)  313.220 ms *
+24  * sjo-b21-link.telia.net (213.155.130.129)  311.419 ms proofpoint-svc067964-ic352023.c.telia.net (62.115.186.253)  313.557 ms
+25  proofpoint-svc067964-ic352023.c.telia.net (62.115.186.253)  304.601 ms  301.578 ms  321.814 ms
+26  mx0a-001b2d01.pphosted.com (148.163.156.1)  330.749 ms  331.099 ms  323.417 ms
+ 
+------------------ LAST IAM GETTING THIS LOCATION -----------------
+
+proofpoint-svc067964-ic352023.c.telia.net (62.115.186.253)
+ 
+------------After doing this ip lookup--------------
+
+IP:	62.115.186.253
+Decimal:	1047771901
+Hostname:	proofpoint-svc067964-ic352023.c.telia.net
+ASN:	1299
+ISP:	Telia Company
+Organization:	Telia Company
+Type:	Broadband
+Assignment:	Likely Static IP
+Continent:	Europe
+Country:	
+Latitude:	47  (47° 0′ 0.00″ N)
+Longitude:	8  (8° 0′ 0.00″ E) 
+
+       -------------------------- The End ---------------------------
