@@ -6,3 +6,5 @@ All 1000 scanned ports on 203.163.246.23 are filtered
 
 Nmap done: 1 IP address (1 host up) scanned in 10.62 seconds
 
+********** PORTS ARE FILTERED  ************
+it didn't get port because ports are filtered 
