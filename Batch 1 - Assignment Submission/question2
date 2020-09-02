@@ -19,6 +19,27 @@ dscx.akamaiedge.net
 	retry = 1000
 	expire = 1000
 	minimum = 1800
+	
+	************** I ping to find ip of the servers ********************
+	ping e2874.dscx.akamaiedge.net.
+PING e2874.dscx.akamaiedge.net (104.91.245.85) 56(84) bytes of data.
+64 bytes from a104-91-245-85.deploy.static.akamaitechnologies.com (104.91.245.85): icmp_seq=1 ttl=55 time=47.3 ms
+64 bytes from a104-91-245-85.deploy.static.akamaitechnologies.com (104.91.245.85): icmp_seq=2 ttl=55 time=57.2 ms
+64 bytes from a104-91-245-85.deploy.static.akamaitechnologies.com (104.91.245.85): icmp_seq=3 ttl=55 time=55.6 ms
+
+	
+	************* IP LOOKUP FOR TRACING LOCATION ***********
+	IP:	104.91.245.85
+Decimal:	1750857045
+Hostname:	a104-91-245-85.deploy.static.akamaitechnologies.com
+ASN:	16625
+ISP:	Akamai Technologies
+Organization:	Akamai Technologies
+Services:	None detected
+Continent:	North America
+Country:	United States us flag
+Latitude:	37.751  (37° 45′ 3.60″ N)
+Longitude:	-97.822  (97° 49′ 19.20″ W)
      
      ************************ WIPRO LOCATION******************
 www.wipro.com
@@ -37,3 +58,23 @@ d361nqn33s63ex.cloudfront.net
 	retry = 900
 	expire = 1209600
 	minimum = 86400
+	
+	***************** First i ping to find the ip ******************
+	ping d361nqn33s63ex.cloudfront.net
+PING d361nqn33s63ex.cloudfront.net (13.227.165.54) 56(84) bytes of data.
+64 bytes from server-13-227-165-54.bom51.r.cloudfront.net (13.227.165.54): icmp_seq=1 ttl=242 time=67.8 ms
+64 bytes from server-13-227-165-54.bom51.r.cloudfront.net (13.227.165.54): icmp_seq=2 ttl=242 time=78.0 ms
+64 bytes from server-13-227-165-54.bom51.r.cloudfront.net (13.227.165.54): icmp_seq=3 ttl=242 time=76.5 ms
+
+	************** IP LOOKUP FOR TRACING LOCATION ***********
+	IP:	13.227.165.54
+Decimal:	233022774
+Hostname:	server-13-227-165-54.bom51.r.cloudfront.net
+ASN:	16509
+ISP:	Amazon CloudFront
+Organization:	Amazon CloudFront
+Services:	None detected
+Continent:	North America
+Country:	United States us flag
+Latitude:	37.751  (37° 45′ 3.60″ N)
+Longitude:	-97.822  (97° 49′ 19.20″ W)
